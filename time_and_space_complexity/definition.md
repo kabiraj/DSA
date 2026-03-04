@@ -66,34 +66,8 @@ Simple metaphor:
 - Example:
   - create new list and copy/transform each element from original list
 
-`O(log n)` extra space
-- Usually from recursion depth when problem size halves each call.
-- Example: binary search recursion stack.
-
-`O(n^2)` extra space
-- 2D structure where both dimensions grow with `n`.
-- Example: `n x n` matrix or DP table.
-
-## Quick memory trick for growth
-- `O(1)` stays same
-- `O(log n)` grows slowly
-- `O(n)` grows directly
-- `O(n log n)` medium-fast growth
-- `O(n^2)` grows fast
-- `O(2^n)` and `O(n!)` explode
 
 ## Why this matters in real world
 - RAM is limited (on device and servers).
 - More memory usage can slow systems and increase cloud cost.
 - Better space-efficient code helps scale to more users.
-
-## Quick examples
-
-Time `O(n)`, Space `O(1)`:
-- Find max element in array using one pass and one variable.
-
-Time `O(n)`, Space `O(n)`:
-- Build a cleaned string for palindrome check, then compare with reverse.
-
-Time `O(n^2)`, Space `O(1)`:
-- Nested loops comparing all pairs in an array.
